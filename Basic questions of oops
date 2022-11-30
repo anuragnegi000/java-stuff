@@ -1,0 +1,25 @@
+//Easy question,WAP to print area and perimeter of reactangle using object oriented programming language
+
+class Rectangle{
+    int l;
+    int b;
+    public int area(int a,int b ){
+       return a*b;
+    }
+    public int perimeter(int m,int n){
+        return 2*(m*n);
+    }
+}
+
+
+
+public class practiseset_ch81 {
+    public static void main(String[] args) {
+        Rectangle obj=new Rectangle();
+        System.out.println("Area of rectangle");
+        System.out.println(obj.area(4,3));
+        System.out.println("Perimeter of rectangle");
+        System.out.println(obj.perimeter(4,3));
+
+    }
+}
