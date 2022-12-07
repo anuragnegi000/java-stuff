@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import java.util.Random;
+public class guessthenumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Random rd = new Random();
+        int userinput=0;
+        int k=5;
+        int computerinput = rd.nextInt(100);
+        System.out.println("Welcome to the number gusseing game you will get 5 chance to guess the number");
+        while (true) {
+            k--;
+            userinput=sc.nextInt();
+            if(k==0){
+                System.out.println("You're out of chance");
+                break;
+            }
+            if (userinput == computerinput) {
+                System.out.println("You have guessed the correct number");
+                break;
+            } else if (userinput > computerinput) {
+                System.out.println("The number you have guessed is too large");
+            } else if (userinput < computerinput) {
+                System.out.println("The number you have guessed is too small");
+            }
+
+        }
+    }
+}
