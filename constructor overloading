@@ -1,0 +1,30 @@
+class myName{
+    private int id;
+    private String name;
+    public myName(int n,String y){
+        id=n;
+        name=y;
+    }
+    public void setName(String n){
+        name=n;
+    }
+    public String getName(){
+        return name;
+    }
+    public void setID(int i){
+        id=i;
+    }
+    public int getID(){
+        return id;
+    }
+
+}
+public class constructors {
+    public static void main(String[] args) {
+
+
+        myName anurag = new myName(13, "Siya");
+        System.out.println(anurag.getID());
+        System.out.println(anurag.getName());
+        }
+   }
